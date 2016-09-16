@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-require "bundler/setup"
-require "wotd"
+require_relative '../lib/wotd'
 
 Wotd::CLI.new.call

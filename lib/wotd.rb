@@ -1,5 +1,9 @@
-require "wotd/version"
+require 'open-uri'
+require 'nokogiri'
+require 'colorize'
+require 'pry'
 
-module Wotd
-  # Your code goes here...
-end
+require_relative "wotd/version"
+require_relative "wotd/cli"
+require_relative "wotd/word"
+
