@@ -7,13 +7,25 @@ class Wotd::CLI
 
   def list_word
     puts "************* Word of the Day *************"
-    puts "Word"
-    puts " Definition"
+    @word = Wotd::Word.today
+    @word.each do |word|
+      puts ""
+      puts "----------   #{word.wotd}   ----------"
+      puts ""
+      puts "Definition- #{word.definition}"
+    end
   end
 
   def wotd_info
-    puts "Example"
-    puts "Fact"
+    @word = Wotd::Word.today
+    @word.each do |word|
+      puts "*********** Example of #{word.wotd} **********"
+      puts ""
+      puts "#{word.example}"
+      puts ""
+      puts "---------- Did you know? ----------"
+      puts "#{word.fact}"
+    end
   end
 
   def menu
