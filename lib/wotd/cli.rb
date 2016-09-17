@@ -10,7 +10,7 @@ class Wotd::CLI
     @word = Wotd::Word.today
     @word.each do |word|
       puts ""
-      puts "----------   #{word.wotd}   ----------"
+      puts "----------   #{word.wotd}   ----------".colorize(:cyan)
       puts ""
       puts "Definition- #{word.definition}"
     end
