@@ -22,7 +22,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Type the following command
+
+  $ wotd
+
+Then follow the prompts.
 
 ## Development
 
