@@ -24,7 +24,7 @@ Or install it yourself as:
 
 Type the following command
 
-  $ wotd
+    $ wotd
 
 Then follow the prompts.
 
