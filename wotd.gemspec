@@ -9,9 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["cmiller36"]
   spec.email         = ["m.calliemiller@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Simple CLI to view a word of the day}
+  spec.homepage      = "https://github.com/cmiller36/wotd-cli-gem"
   spec.license       = "MIT"
 
   spec.executables   = ["wotd"]
