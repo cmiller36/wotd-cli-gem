@@ -1,8 +1,8 @@
 # Wotd
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/wotd`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem provides a CLI to view a word of the day along with definition and other information.
 
-TODO: Delete this and the text above, and describe your gem
+Wotd (Word of the Day) will pull the word of the day from Merriam-Webster's website. User will be shown the daily word and definition. User has the option to view more info pertaining to the daily word. If user selects Y for yes, an example of the word used in a sentence and a fact will be shown.  Otherwise user can view word again or exit the program.
 
 ## Installation
 
