@@ -14,8 +14,8 @@ class Wotd::Word
     doc = Nokogiri::HTML(open("http://www.merriam-webster.com/word-of-the-day"))
     word = self.new
     word.wotd = doc.search("h1").last.text
-    word.definition = doc.search("div.wod-definition-container p").first.text
-    word.example = doc.search("div.wod-definition-container p")[1].children.text
+    word.definition = doc.search( '//h2[text()="Definition"]/following::p[not(preceding::h2[text()="Examples"])]' ).text
+    word.example = doc.search('//*[preceding-sibling::h2[2]]').first.text
     word.fact = doc.search("div.wod-did-you-know-container p").text
     word
   end
