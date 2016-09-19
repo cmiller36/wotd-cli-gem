@@ -12,6 +12,8 @@ class Wotd::CLI
       puts ""
       puts "----------   #{word.wotd}   ----------".colorize(:cyan)
       puts ""
+      puts "----------   #{word.syllables}   ----------".colorize(:yellow)
+      puts ""
       puts "Definition- #{word.definition}"
     end
   end

@@ -1,5 +1,5 @@
 class Wotd::Word
-  attr_accessor :wotd, :definition, :example, :fact
+  attr_accessor :wotd, :syllables, :definition, :example, :fact 
 
   def self.today
     word = []
@@ -14,6 +14,7 @@ class Wotd::Word
     doc = Nokogiri::HTML(open("http://www.merriam-webster.com/word-of-the-day"))
     word = self.new
     word.wotd = doc.search("h1").last.text
+    word.syllables = doc.search("div.word-attributes span.word-syllables").text
     word.definition = doc.search( '//h2[text()="Definition"]/following::p[not(preceding::h2[text()="Examples"])]' ).text
     word.example = doc.search('//*[preceding-sibling::h2[2]]').first.text
     word.fact = doc.search("div.wod-did-you-know-container p").text
