@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    wotd (0.1.1)
+    wotd (0.1.2)
       colorize
       nokogiri (~> 1.6)
 
