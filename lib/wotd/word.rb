@@ -11,7 +11,7 @@ class Wotd::Word
     # go to site, find wotd
     # extract properties
     # instantiate word
-    doc = Nokogiri::HTML(open("https://www.merriam-webster.com/word-of-the-day", :allow_redirections => :all))
+    doc = Nokogiri::HTML(open("https://www.merriam-webster.com/word-of-the-day"))
     word = self.new
     word.wotd = doc.search("h1").last.text
     word.syllables = doc.search("div.word-attributes span.word-syllables").text
